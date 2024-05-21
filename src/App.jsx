@@ -1,4 +1,4 @@
-import { useRef, useState, useCallback, useEffect } from 'react';
+import { useRef, useState, useCallback } from 'react';
 
 import Places from './components/Places.jsx';
 import Modal from './components/Modal.jsx';
@@ -11,10 +11,6 @@ import { useFetch } from './hooks/useFetch.js';
 
 function App() {
   const selectedPlace = useRef();
-
-  // const [userPlaces, setUserPlaces] = useState([]);
-  // const [ isFetching, setIsFetching ] = useState(false);
-  // const [ error, setError ] = useState();
 
   const [ errorUpdatingPlaces, setErrorUpdatingPlaces ] = useState();
 
